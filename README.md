@@ -8,13 +8,13 @@
 
 # 3. install dependencies
 
-# a. SQLAlchemy 1.4.41
+    # a. SQLAlchemy 1.4.41
 
-# b. Alembic (migration manager)
+    # b. Alembic (migration manager)
 
-# c. ipdb
+    # c. ipdb
 
-# d. faker-generate fake data
+    # d. faker-generate fake data
 
 # 4. create the migration environment
 
