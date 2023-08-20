@@ -6,10 +6,15 @@
 
 2. create virtual enviro
 3. install depdendencies
-   a. SQLAlchemy 1.4.41
-   b. Alembic (migration manager)
-   c. ipdb
-   d. faker-generate fake data
+
+# a. SQLAlchemy 1.4.41
+
+# b. Alembic (migration manager)
+
+#c. ipdb
+
+# d. faker-generate fake data
+
 4. create the migration enviro
 5. configure the migration enviro (alembic.ini and env.py)
 6. create declarative enviro
