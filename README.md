@@ -20,9 +20,10 @@
 
 # 5. configure the migration environment (alembic.ini and env.py) finished
 
-
 # 6. create declarative environment
 
-# 7. populate the database with seeds
+# 7. create schema python classes or models
 
-# 8. test the environment relationships one to many
+# 8. populate the database with seeds
+
+# 9. test the environment relationships one to many
