@@ -18,7 +18,8 @@
 
 # 4. create the migration environment
 
-# 5. configure the migration environment (alembic.ini and env.py)
+# 5. configure the migration environment (alembic.ini and env.py) finished
+
 
 # 6. create declarative environment
 
