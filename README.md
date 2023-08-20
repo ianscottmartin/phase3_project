@@ -4,9 +4,9 @@
 
 # 1.create repo and clone
 
-# 2. create virtual enviro
+# 2. create virtual environment
 
-# 3. install depdendencies
+# 3. install dependencies
 
 # a. SQLAlchemy 1.4.41
 
@@ -16,12 +16,12 @@
 
 # d. faker-generate fake data
 
-# 4. create the migration enviro
+# 4. create the migration environment
 
-# 5. configure the migration enviro (alembic.ini and env.py)
+# 5. configure the migration environment (alembic.ini and env.py)
 
-# 6. create declarative enviro
+# 6. create declarative environment
 
 # 7. populate the database with seeds
 
-# 8. test the enviro realationships one to many
+# 8. test the environment relationships one to many
