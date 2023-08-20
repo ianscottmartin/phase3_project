@@ -4,7 +4,7 @@
 
 # 1.create repo and clone
 
-# 2. create virtual environment
+# 2. create virtual environment- had to delete pipfile and pipfile.lock in main directory
 
 # 3. install dependencies
 
