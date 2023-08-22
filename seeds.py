@@ -8,9 +8,9 @@ Session = sessionmaker(bind=engine)
 session = Session()
 
 users = [
-    User(username="test name"),
-    User(username="test name"),
-    User(username="test name"),
+    User(username="comicfan"),
+    User(username="steveo"),
+    User(username="davesteve"),
 ]
 
 session.bulk_save_objects(users)
