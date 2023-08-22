@@ -9,8 +9,7 @@ class User(Base):
     __tablename__ = "users"
     id = Column("user_id", Integer, primary_key=True)
     username = Column("user_name", String, unique=True)
-    email = Column(String(55), unique=True)
-    
+    email = Column(String(55))
 
     def __repr__(self):
         return (
