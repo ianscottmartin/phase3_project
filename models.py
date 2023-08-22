@@ -17,5 +17,7 @@ class User(Base):
             + f"id={self.id}, "
             + f"username={self.username}, "
             + f"email={self.email}, "
+            + f"created_at={self.create_at},"
+            + f"updated_at={self.updated_at},"
             + ">"
         )
