@@ -21,3 +21,21 @@ class User(Base):
             + f"updated_at={self.updated_at},"
             + ">"
         )
+
+
+class User(Base):
+    __tablename__ = "book_list"
+    id = Column("book_id", Integer, primary_key=True)
+    title = Column("book_title", String, unique=True)
+    publisher = Column(String(55))
+
+    def __repr__(self):
+        return (
+            f"\n<User"
+            + f"id={self.id}, "
+            + f"publisher={self.publisher}, "
+            + f"title={self.title}, "
+            + f"created_at={self.create_at},"
+            + f"updated_at={self.updated_at},"
+            + ">"
+        )
