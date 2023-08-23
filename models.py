@@ -23,15 +23,15 @@ class User(Base):
         )
 
 
-class User(Base):
-    __tablename__ = "book_list"
+class Book(Base):
+    __tablename__ = "books"
     id = Column("book_id", Integer, primary_key=True)
     title = Column("book_title", String, unique=True)
     publisher = Column(String(55))
 
     def __repr__(self):
         return (
-            f"\n<User"
+            f"\n<Book"
             + f"id={self.id}, "
             + f"publisher={self.publisher}, "
             + f"title={self.title}, "

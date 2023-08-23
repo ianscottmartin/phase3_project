@@ -1,6 +1,7 @@
 from models import User
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
+from models import Book
 
 engine = create_engine("sqlite:///data.db")
 
@@ -14,4 +15,9 @@ users = [
 ]
 
 session.bulk_save_objects(users)
+session.commit()
+
+
+books = [Book(title="Spiderman"), Book(publisher="Marvel")]
+session.bulk_save_objects(books)
 session.commit()
