@@ -1,90 +1,68 @@
-from models.books import User
+from models import User, Book
+
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
-from models.books import Book
 
 engine = create_engine("sqlite:///data.db")
 
 Session = sessionmaker(bind=engine)
 session = Session()
 
-import random
-from faker import Faker
 
+users = [
+    User(username="test user"),
+    User(username="test1"),
+    User(username= "test2"),
+    User(username="test3"),
+    User(username= "test4"),
+    User(username="test5")
+]
 
-for _ in range(10):
-    first_name = fake.first_name()
-    last_name = fake.last_name()
-    email = f"{first_name}_{last_name}@gmail.com"
-    user = User(first_name=first_name, last_name=last_name, email=email, id=fake.id())
-
-
+print(users)
 session.bulk_save_objects(users)
 session.commit()
 
 
+session.query(User).delete()
+#session.commit()
+
+
 books = [
-    Book(title="Black Panther"),
-    Book(publisher="Marvel"),
-    Book(title="Ironman"),
-    Book(publisher="Marvel"),
-    Book(title="Xmen"),
-    Book(publisher="Marvel"),
-    Book(title="XFactor"),
-    Book(publisher="Marvel"),
-    Book(title="New Mutants"),
-    Book(publisher="Marvel"),
-    Book(title="Amazing Spiderman"),
-    Book(publisher="Marvel"),
-    Book(title="Avengers"),
-    Book(publisher="Marvel"),
-    Book(title="Fantastic Four"),
-    Book(publisher="Marvel"),
-    Book(title="Thor"),
-    Book(publisher="Marvel"),
-    Book(title="Guardians of the Galaxy"),
-    Book(publisher="Marvel"),
-    Book(title="ShadowHawk"),
-    Book(publisher="Image"),
-    Book(title="Maxx"),
-    Book(publisher="Image"),
-    Book(title="Wet Works"),
-    Book(publisher="Image"),
-    Book(title="WildCats"),
-    Book(publisher="Image"),
-    Book(title="Cyberforce"),
-    Book(publisher="Image"),
-    Book(title="Walking Dead"),
-    Book(publisher="Image"),
-    Book(title="Spawn"),
-    Book(publisher="Image"),
-    Book(title="YoungBlood"),
-    Book(publisher="Image"),
-    Book(title="Savage Dragon"),
-    Book(publisher="Image"),
-    Book(title="Prophet"),
-    Book(publisher="Image"),
-    Book(title="Justice League"),
-    Book(publisher="DC"),
-    Book(title="Green Arrow"),
-    Book(publisher="DC"),
-    Book(title="Nightwing"),
-    Book(publisher="DC"),
-    Book(title="Flash"),
-    Book(publisher="DC"),
-    Book(title="Teen Titans"),
-    Book(publisher="DC"),
-    Book(title="Catwoman"),
-    Book(publisher="DC"),
-    Book(title="Aquaman"),
-    Book(publisher="DC"),
-    Book(title="Superman"),
-    Book(publisher="DC"),
-    Book(title="Batman"),
-    Book(publisher="DC"),
-    Book(title="Wonder Woman"),
-    Book(publisher="DC"),
+    Book(title="Black Panther", publisher="Marvel"),
+    Book(title="Ironman", publisher="Marvel"),
+    Book(title="Xmen", publisher="Marvel"),
+    Book(title="XFactor", publisher="Marvel"),
+    Book(title="New Mutants", publisher="Marvel"),
+    Book(title="Spiderman", publisher="Marvel"),
+    Book(title="Avengers", publisher="Marvel"),
+    Book(title="Fantastic Four", publisher="Marvel"),
+    Book(title="Thor", publisher="Marvel"),
+    Book(title="Guardians of the Galaxy", publisher="Marvel"),
+    Book(title="ShadowHawk", publisher="Image"),
+    Book(title="Maxx", publisher="Image"),
+    Book(title="Wet Works", publisher="Image"),
+    Book(title="WildCats", publisher="Image"),
+    Book(title="Cyberforce", publisher="Image"),
+    Book(title="Walking Dead", publisher="Image"),
+    Book(title="Spawn", publisher="Image"),
+    Book(title="YoungBlood", publisher="Image"),
+    Book(title="Savage Dragon", publisher="Image"),
+    Book(title="Prophet", publisher="Image"),
+    Book(title="Justice League", publisher="DC"),
+    Book(title="Green Arrow", publisher="DC"),
+    Book(title="Nightwing", publisher="DC"),
+    Book(title="Flash", publisher="DC"),
+    Book(title="Teen Titans", publisher="DC"),
+    Book(title="Catwoman", publisher="DC"),
+    Book(title="Aquaman", publisher="DC"),
+    Book(title="Superman", publisher="DC"),
+    Book(title="Batman", publisher="DC"),
+    Book(title="Wonder Woman", publisher="DC"),
 ]
 
+print(books)
 session.bulk_save_objects(books)
 session.commit()
+
+
+session.query(Book).delete()

@@ -1,8 +1,8 @@
-"""data error on name constraiints
+"""update books
 
-Revision ID: 76e4070bb8c4
-Revises: d5a7bbe293bb
-Create Date: 2023-08-23 17:46:34.697829
+Revision ID: 81c83a20dce3
+Revises: c018daa55aad
+Create Date: 2023-08-27 10:45:54.901455
 
 """
 from typing import Sequence, Union
@@ -12,8 +12,8 @@ import sqlalchemy as sa
 
 
 # revision identifiers, used by Alembic.
-revision: str = '76e4070bb8c4'
-down_revision: Union[str, None] = 'd5a7bbe293bb'
+revision: str = '81c83a20dce3'
+down_revision: Union[str, None] = 'c018daa55aad'
 branch_labels: Union[str, Sequence[str], None] = None
 depends_on: Union[str, Sequence[str], None] = None
 

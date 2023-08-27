@@ -4,8 +4,8 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-sqlalchemy = "==1.4.41"
 alembic = "*"
+sqlalchemy = "==1.4.41"
 ipdb = "*"
 faker = "*"
 
