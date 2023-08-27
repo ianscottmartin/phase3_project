@@ -1,7 +1,9 @@
-from models import User, Book
+from models.models import User, Book
 
 from sqlalchemy import create_engine
-from sqlalchemy.orm import sessionmaker
+from sqlalchemy.orm import sessionmaker, relationship
+
+
 
 engine = create_engine("sqlite:///data.db")
 
