@@ -17,8 +17,8 @@ user_input = input("Please Select a number(1-3)")
     
 def handle_user_input(input):
         is_number = input.isdigit()
-        if is_number:
-            selection = int(input)
+    if is_number:
+        selection = int(input)
         if 1<= selection <= 3:
             handle_selection(selection)
         else:

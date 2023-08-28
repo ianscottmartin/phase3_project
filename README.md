@@ -18,11 +18,17 @@
 
 # 4. create the migration environment
 
+alembic init migrations
+
 # 5. configure the migration environment (alembic.ini and env.py) finished
 
 # 6. create declarative environment
 
+**init**
+
 # 7. create schema python classes or models
+
+models.py, users.py, books.py
 
 # 8. populate the database with seeds
 
