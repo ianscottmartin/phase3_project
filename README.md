@@ -1,6 +1,6 @@
 # phase3_project
 
-# phase3 project
+# phase3 project Comic Selector app
 
 # 1.create repo and clone
 
