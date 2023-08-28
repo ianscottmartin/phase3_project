@@ -66,3 +66,4 @@ session.commit()
 
 
 session.query(Book).delete()
+session.commit(User).delete()
