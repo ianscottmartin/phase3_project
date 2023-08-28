@@ -13,7 +13,7 @@ start()
     
 user_input = input("Please Select a number(1-3)")
     
-        handle_user_input(user_input)
+        #handle_user_input(user_input)
     
 def handle_user_input(input):
         is_number = input.isdigit()
