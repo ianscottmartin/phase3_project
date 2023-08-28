@@ -2,6 +2,8 @@
 
 # phase3 project Comic Selector app
 
+# Catalogue comic books by publisher and user
+
 # 1.create repo and clone
 
 # 2. create virtual environment- had to delete pipfile and pipfile.lock in main directory
