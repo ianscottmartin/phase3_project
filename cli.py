@@ -20,7 +20,8 @@ def handle_user_input(input):
           handle_selection(selection)
     else:
        print("try again")        
-        start()
+        
+start()
     
     
     

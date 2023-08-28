@@ -24,7 +24,7 @@ session.commit()
 
 
 session.query(User).delete()
-#session.commit()
+session.commit()
 
 
 books = [
