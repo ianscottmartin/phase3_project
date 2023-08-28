@@ -1,5 +1,5 @@
 def start():
-    print("Welcome to Comic Selector")
+    print("***Welcome to Comic Selector***")
     print("1. Select Comic")
     print("2. ADD Comic ")
     print("3. Exit ")

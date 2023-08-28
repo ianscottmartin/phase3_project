@@ -10,12 +10,12 @@ session = Session()
 
 
 users = [
-    User(username="test user"),
-    User(username="test1"),
-    User(username= "test2"),
-    User(username="test3"),
-    User(username= "test4"),
-    User(username="test5")
+    User(username="dude"),
+    User(username="stevedave"),
+    User(username= "brodie"),
+    User(username="silent bob"),
+    User(username= "jay"),
+    User(username="holden")
 ]
 
 print(users)
