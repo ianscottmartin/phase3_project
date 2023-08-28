@@ -14,7 +14,7 @@
 
     # b. Alembic (migration manager)
 
-    # c. ipdb
+    # c. ipdb as a debugger
 
     # d. faker-generate fake data
 
