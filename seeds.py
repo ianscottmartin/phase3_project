@@ -10,12 +10,16 @@ session = Session()
 
 
 users = [
-    User(username="dude"),
-    User(username="stevedave"),
-    User(username= "brodie"),
-    User(username="silent bob"),
-    User(username= "jay"),
-    User(username="holden")
+    User(username="Dude"),
+    User(username="Stevedave"),
+    User(username= "Brodie"),
+    User(username="Silent Bob"),
+    User(username= "Jay"),
+    User(username="Holden")
+    User(username="Dante")
+    User(username="Randall")
+    User(username="Caitlyn Bre")
+    User(username="Brad")
 ]
 
 print(users)
@@ -27,7 +31,7 @@ session.query(User).delete()
 session.commit()
 
 
-books = [
+comics = [
     Book(title="Black Panther", publisher="Marvel"),
     Book(title="Ironman", publisher="Marvel"),
     Book(title="Xmen", publisher="Marvel"),
