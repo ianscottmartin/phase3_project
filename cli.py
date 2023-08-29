@@ -1,5 +1,10 @@
-from sqlalchemy.orm import Table
 
+from db.models import User, Comic, UserComic
+from sqlalchemy.orm import Table
+from prettycli import yellow, red, color
+from banners import Banner
+
+banners = Banner()
 
 def start():
     print("***Welcome to Comic Selector***")
