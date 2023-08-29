@@ -1,9 +1,11 @@
-from models import User, Book
+from db.models import User, comic
+
+
 
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 
-engine = create_engine("sqlite:///data.db")
+engine = create_engine("sqlite:///db/models/data.db")
 
 Session = sessionmaker(bind=engine)
 session = Session()
@@ -32,36 +34,36 @@ session.commit()
 
 
 comics = [
-    Book(title="Black Panther", publisher="Marvel"),
-    Book(title="Ironman", publisher="Marvel"),
-    Book(title="Xmen", publisher="Marvel"),
-    Book(title="XFactor", publisher="Marvel"),
-    Book(title="New Mutants", publisher="Marvel"),
-    Book(title="Spiderman", publisher="Marvel"),
-    Book(title="Avengers", publisher="Marvel"),
-    Book(title="Fantastic Four", publisher="Marvel"),
-    Book(title="Thor", publisher="Marvel"),
-    Book(title="Guardians of the Galaxy", publisher="Marvel"),
-    Book(title="ShadowHawk", publisher="Image"),
-    Book(title="Maxx", publisher="Image"),
-    Book(title="Wet Works", publisher="Image"),
-    Book(title="WildCats", publisher="Image"),
-    Book(title="Cyberforce", publisher="Image"),
-    Book(title="Walking Dead", publisher="Image"),
-    Book(title="Spawn", publisher="Image"),
-    Book(title="YoungBlood", publisher="Image"),
-    Book(title="Savage Dragon", publisher="Image"),
-    Book(title="Prophet", publisher="Image"),
-    Book(title="Justice League", publisher="DC"),
-    Book(title="Green Arrow", publisher="DC"),
-    Book(title="Nightwing", publisher="DC"),
-    Book(title="Flash", publisher="DC"),
-    Book(title="Teen Titans", publisher="DC"),
-    Book(title="Catwoman", publisher="DC"),
-    Book(title="Aquaman", publisher="DC"),
-    Book(title="Superman", publisher="DC"),
-    Book(title="Batman", publisher="DC"),
-    Book(title="Wonder Woman", publisher="DC"),
+    Comic(title="Black Panther", publisher="Marvel"),
+    Comic(title="Ironman", publisher="Marvel"),
+    Comic(title="Xmen", publisher="Marvel"),
+    Comic(title="XFactor", publisher="Marvel"),
+    Comic(title="New Mutants", publisher="Marvel"),
+    Comic(title="Spiderman", publisher="Marvel"),
+    Comic(title="Avengers", publisher="Marvel"),
+    Comic(title="Fantastic Four", publisher="Marvel"),
+    Comic(title="Thor", publisher="Marvel"),
+    Comic(title="Guardians of the Galaxy", publisher="Marvel"),
+    Comic(title="ShadowHawk", publisher="Image"),
+    Comic(title="Maxx", publisher="Image"),
+    Comic(title="Wet Works", publisher="Image"),
+    Comic(title="WildCats", publisher="Image"),
+    Comic(title="Cyberforce", publisher="Image"),
+    Comic(title="Walking Dead", publisher="Image"),
+    Comic(title="Spawn", publisher="Image"),
+    Comic(title="YoungBlood", publisher="Image"),
+    Comic(title="Savage Dragon", publisher="Image"),
+    Comic(title="Prophet", publisher="Image"),
+    Comic(title="Justice League", publisher="DC"),
+    Comic(title="Green Arrow", publisher="DC"),
+    Comic(title="Nightwing", publisher="DC"),
+    Comic(title="Flash", publisher="DC"),
+    Comic(title="Teen Titans", publisher="DC"),
+    Comic(title="Catwoman", publisher="DC"),
+    Comic(title="Aquaman", publisher="DC"),
+    Comic(title="Superman", publisher="DC"),
+    Comic(title="Batman", publisher="DC"),
+    Comic(title="Wonder Woman", publisher="DC"),
 ]
 
 print(books)
