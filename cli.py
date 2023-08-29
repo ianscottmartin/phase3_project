@@ -6,13 +6,41 @@ from banners import Banner
 
 banners = Banner()
 
-def start():
-    print("***Welcome to Comic Selector***")
-    print("1. Select Comic")
-    print("2. ADD Comic ")
-    print("3. Exit ")
+
+   
+def start(self):
+        self.clear(40)
+        banners.welcome()
+        self.clear(4)
+        
+        return self.welcome()
     
     
+def welcome(self):
+        print("Are you new here?")
+        selection = input.yes_no(option="Exit")
+        if selection == "Yes":
+            self.sign_up()
+        elif selection == "Exit":
+            self.exit()
+        else:
+            self.login()
+
+
+def sign_up(self):
+        username = self.collect_data("What is your username?")
+        if User.find_by(username=username):
+            print(red("That username is taken! Please try again."))
+            self.sign_up()
+        else:
+            password = self.collect_data("What is your password?")
+            self.current_user = User.create(username=username, password=password)
+        
+        if self.current_user:
+            self.main_menu()
+        else:
+            print("Please try again.\n")
+            self.welcome()    
 start()
     
     
