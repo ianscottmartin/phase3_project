@@ -1,11 +1,11 @@
-from db.models import User, comic
+from db.models import User, Comic
 
 
 
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 
-engine = create_engine("sqlite:///db/models/data.db")
+engine = create_engine("sqlite:///data.db")
 
 Session = sessionmaker(bind=engine)
 session = Session()
@@ -29,8 +29,8 @@ session.bulk_save_objects(users)
 session.commit()
 
 
-session.query(User).delete()
-session.commit()
+#session.query(User).delete()
+#session.commit()
 
 
 comics = [
@@ -66,10 +66,10 @@ comics = [
     Comic(title="Wonder Woman", publisher="DC"),
 ]
 
-print(books)
-session.bulk_save_objects(books)
+print(comics)
+session.bulk_save_objects(comics)
 session.commit()
 
 
-session.query(Book).delete()
+session.query(Comic).delete()
 session.query(User).delete()
