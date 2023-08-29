@@ -15,10 +15,10 @@ users = [
     User(username= "Brodie"),
     User(username="Silent Bob"),
     User(username= "Jay"),
-    User(username="Holden")
-    User(username="Dante")
-    User(username="Randal")
-    User(username="Caitlin Bree")
+    User(username="Holden"),
+    User(username="Dante"),
+    User(username="Randal"),
+    User(username="Caitlin Bree"),
     User(username="Brad")
 ]
 
