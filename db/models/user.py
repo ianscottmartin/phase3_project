@@ -1,4 +1,5 @@
-from sqlalchemy import Column, Integer, ForeignKey, String
+from sqlalchemy import Column, Integer, ForeignKey, String, relationship
+
 from .base import Base
 
 class User(Base):
@@ -14,4 +15,7 @@ class User(Base):
             +f"username={self.username},"\
             +f"email={self.email},"\
             + ">"
-       
+
+comics= relationship("Comic", secondary=user_comic) 
+
+    

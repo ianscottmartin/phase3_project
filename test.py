@@ -29,7 +29,7 @@
        #     +f"publisher={self.publisher},"\
        #     +f"title{self.title}," 
             
- from sqlalchemy import Column, String, Integer, ForeignKey, relationship, Table
+from sqlalchemy import Column, String, Integer, ForeignKey, relationship, Table
 
 
 
