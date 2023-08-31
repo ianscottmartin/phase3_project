@@ -26,6 +26,7 @@ Table: association table between users and comics
 -join table of relationship
 -id
 -user who liked it id
+_User Story_
 
 Type of relationship: one ot many user may have one or many to comics
 comics can have a relationship of many to many between users
@@ -71,10 +72,7 @@ user liked comics
 -comic id integer not null
 user who liked it id integer not null
 
-
-
 # Catalogue comic books by publisher and user
-
 
 # 1. create virtual environment- had to delete pipfile and pipfile.lock in main directory
 
@@ -105,5 +103,3 @@ user who liked it id integer not null
 # 8. populate the database with seeds
 
 # 9. test the environment relationships one to many
-
-
