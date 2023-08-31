@@ -4,7 +4,7 @@
 
 # Project Blog https://medium.com/@ianscottmartin/setting-up-a-database-using-sqlalchemy-59856f77cd78
 
-# video
+# video 
 
 OOP class for comic with attributes
 class of User with attributes
